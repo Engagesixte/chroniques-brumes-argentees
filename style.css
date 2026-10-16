@@ -10,12 +10,14 @@ body{
 }
 
 .accueil{
-    text-align:center;
+    position:relative;
+    width:90vw;
+    max-width:550px;
 }
 
 .accueil img{
-    width:90vw;
-    max-width:550px;
+    width:100%;
+    display:block;
 
     border-radius:12px;
 
@@ -23,35 +25,29 @@ body{
         0 0 30px rgba(220,220,255,.3),
         0 0 80px rgba(180,180,255,.15);
 }
-
 .btn-commencer{
-    display:inline-block;
+    position:absolute;
 
-    margin-top:30px;
+    bottom:20%;
+    left:50%;
 
-    padding:18px 40px;
+    transform:translateX(-50%);
 
-    font-size:1.3rem;
-    font-weight:bold;
+    padding:18px 35px;
 
-    background:linear-gradient(
-        180deg,
-        #6a729f,
-        #40476b
-    );
+    background:rgba(20,20,40,.9);
 
     color:white;
 
     text-decoration:none;
 
+    font-size:1.2rem;
+    font-weight:bold;
+
     border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.3);
 
     box-shadow:
         0 0 15px rgba(255,255,255,.25);
-
-    transition:0.3s;
-}
-
-.btn-commencer:hover{
-    transform:scale(1.05);
 }
