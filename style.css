@@ -27,27 +27,17 @@ body{
 }
 .btn-commencer{
     position:absolute;
-
     bottom:20%;
     left:50%;
-
     transform:translateX(-50%);
-
     padding:18px 35px;
-
     background:rgba(20,20,40,.9);
-
     color:white;
-
     text-decoration:none;
-
     font-size:1.2rem;
     font-weight:bold;
-
     border-radius:50px;
-
     border:1px solid rgba(255,255,255,.3);
-
     box-shadow:
         0 0 15px rgba(255,255,255,.25);
 }

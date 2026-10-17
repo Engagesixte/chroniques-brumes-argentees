@@ -1,0 +1,70 @@
+body{
+    background-color:#1e1b2e;
+    color:#f4f0e6;
+    font-family: Georgia, serif;
+    margin:0;
+    padding:40px;
+}
+
+.livre{
+    max-width:800px;
+    margin:auto;
+    background-color:#2a2640;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+h1{
+    text-align:center;
+    color:#ffd700;
+}
+
+h2{
+    text-align:center;
+    color:#d6c28a;
+    margin-bottom:40px;
+}
+
+p{
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+.nomLecteur{
+   font-family: Georgia, serif;
+    font-style: italic;
+    color: #d8c9a3;
+    font-weight: bold;
+}
+
+.navigation{
+    text-align:center;
+    margin:40px 0;
+}
+
+.btn-page{
+     display:inline-block;
+
+    padding:12px 28px;
+
+    background:#2c2349;
+
+    color:#d8cda8;
+
+    border:1px solid #8a7bb4;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-style:italic;
+
+    box-shadow:
+        0 0 12px rgba(200,200,255,.2);
+}
+
+.btn-page:hover{
+    background:#6e646e;
+}

@@ -50,3 +50,33 @@ p{
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255,255,255,0.15);
 }
+
+.navigation{
+    text-align:center;
+    margin:40px 0;
+}
+
+.btn-page{
+     display:inline-block;
+
+    padding:12px 28px;
+
+    background:#2c2349;
+
+    color:#d8cda8;
+
+    border:1px solid #8a7bb4;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-style:italic;
+
+    box-shadow:
+        0 0 12px rgba(200,200,255,.2);
+}
+
+.btn-page:hover{
+    background:#6e646e;
+}
