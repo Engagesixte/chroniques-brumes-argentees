@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire - Chapitre 1</title>
+    <link rel="stylesheet" href="css/premier-chapitre-questionnaire.css">
+</head>
+<body>
+
+    <div class="questionnaire">
+
+        <h1>Questionnaire</h1>
+        <h2>Chapitre 1 - L'Enveloppe</h2>
+
+        <form id="quiz">
+
+            <div class="question">
+                <p>1. Où lisait le personnage lorsque l'enveloppe est apparue ?</p>
+
+                <label><input type="radio" name="q1" value="a"> Dans la cuisine</label>
+                <label><input type="radio" name="q1" value="b"> Dans sa chambre</label>
+                <label><input type="radio" name="q1" value="c"> Dans le jardin</label>
+                <label><input type="radio" name="q1" value="d"> Dans le grenier</label>
+            </div>
+
+            <div class="question">
+                <p>2. Quelle était la particularité de l'enveloppe ?</p>
+
+                <label><input type="radio" name="q2" value="a"> Elle était noire</label>
+                <label><input type="radio" name="q2" value="b"> Elle était déchirée</label>
+                <label><input type="radio" name="q2" value="c"> Elle semblait tissée de fils argentés</label>
+                <label><input type="radio" name="q2" value="d"> Elle brillait en rouge</label>
+            </div>
+
+            <div class="question">
+                <p>3. Quel nom apparaissait sur l'enveloppe ?</p>
+
+                <label><input type="radio" name="q3" value="a"> Brume</label>
+                <label><input type="radio" name="q3" value="b"> Clairmont</label>
+                <label><input type="radio" name="q3" value="c"> Cartographe</label>
+                <label><input type="radio" name="q3" value="d"> Argentée</label>
+            </div>
+
+            <div class="question">
+                <p>4. Que représentait le sceau ?</p>
+
+                <label><input type="radio" name="q4" value="a"> Un dragon</label>
+                <label><input type="radio" name="q4" value="b"> Une clé</label>
+                <label><input type="radio" name="q4" value="c"> Un soleil</label>
+                <label><input type="radio" name="q4" value="d"> Un croissant de lune entourant une étoile</label>
+            </div>
+
+            <div class="question">
+                <p>5. Comment réagit le chat ?</p>
+
+                <label><input type="radio" name="q5" value="a"> Il dort</label>
+                <label><input type="radio" name="q5" value="b"> Il miaule puis s'enfuit</label>
+                <label><input type="radio" name="q5" value="c"> Il attaque l'enveloppe</label>
+                <label><input type="radio" name="q5" value="d"> Il ignore la lettre</label>
+            </div>
+
+            <button type="button" id="corriger">
+                Valider mes réponses
+            </button>
+
+        </form>
+
+        <div id="resultat"></div>
+
+    </div>
+
+    <script src="js/premier-chapitre-questionnaire.js"></script>
+
+</body>
+</html>
