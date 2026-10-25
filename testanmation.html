@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test du sceau</title>
+
+    <style>
+
+        body{
+            background:#1e1b2e;
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+
+        #sceau{
+            width:300px;
+            transition:opacity 1s ease;
+        }
+
+        button{
+            margin-top:30px;
+            padding:15px 30px;
+
+            background:#2c2349;
+            color:#d8cda8;
+
+            border:1px solid #8a7bb4;
+            border-radius:30px;
+
+            cursor:pointer;
+        }
+
+        #scene{
+    text-align:center;
+}
+
+#sceau,
+#videoSceau{
+    max-width:800px;
+    width:100%;
+}
+
+#videoSceau{
+    border-radius:12px;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="scene">
+
+    <img
+        id="sceau"
+        src="deuxieme-chapitre/images/sceauFerme.png"
+        alt="Sceau des Brumes">
+
+    <button id="btn-lancer">
+        Utiliser le Médaillon
+    </button>
+
+    <video
+        id="videoSceau"
+        style="display:none;"
+        muted
+        playsinline>
+
+        <source
+            src="deuxieme-chapitre/videos/illuminationDuSceau.mp4"
+            type="video/mp4">
+
+    </video>
+
+    <div id="suite" style="display:none;">
+
+        <a href="deuxieme-chapitre/deuxieme-chapitre-page7.html" class="btn-page">
+            Continuer →
+        </a>
+
+    </div>
+
+</div>
+<script>
+    const bouton =
+    document.getElementById("btn-lancer");
+
+const image =
+    document.getElementById("sceau");
+
+const video =
+    document.getElementById("videoSceau");
+
+const suite =
+    document.getElementById("suite");
+
+bouton.addEventListener("click", () => {
+
+    image.style.display = "none";
+    bouton.style.display = "none";
+
+    video.style.display = "block";
+
+    video.play();
+});
+
+video.addEventListener("ended", () => {
+
+    suite.style.display = "block";
+
+});
+</script>
+</body>
+</html>
