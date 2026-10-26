@@ -20,7 +20,7 @@ formulaire.addEventListener("submit", async (e) => {
                     genre: window.genreChoisi
                 }
             ])
-            .select();
+   
 
     if(error){
 
@@ -30,8 +30,6 @@ formulaire.addEventListener("submit", async (e) => {
 
         return;
     }
-
-    console.log(data);
 
     alert("Bienvenue " + prenom);
 
