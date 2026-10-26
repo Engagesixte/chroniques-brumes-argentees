@@ -19,143 +19,178 @@ body{
 }
 
 .intro-container{
-    position: fixed;
+    position:fixed;
 
-    top: 48%;
-    left: 50%;
+    top:46%;
+    left:50%;
 
-    transform: translate(-50%, -50%);
+    transform:translate(-50%,-50%);
 
-    width: 85%;
+    width:90%;
+    max-width:500px;
 
-    text-align: center;
+    text-align:center;
 
     z-index:1000;
 }
 
 .ligne{
+    display:block;
 
     opacity:0;
 
-   color:#fffdf2;
+    color:#fffdf2;
 
     font-weight:bold;
 
-   text-shadow:
-        0 0 5px rgba(0,0,0,.9),
-        0 0 15px rgba(0,0,0,.8),
-        0 0 30px rgba(255,255,255,.5),
-        0 0 60px rgba(180,200,255,.4);
+    text-shadow:
+        0 0 8px rgba(0,0,0,1),
+        0 0 15px rgba(0,0,0,.9),
+        0 0 25px rgba(255,255,255,.6),
+        0 0 50px rgba(180,200,255,.4);
 
     animation:
         apparitionLigne 2s ease forwards,
-        haloMagique 4s ease-in-out infinite;
+        haloMagique 3s ease-in-out infinite;
 }
 
+/* phrase 1 */
 .ligne1{
-    font-size:3rem;
+    font-size:1.7rem;
     animation-delay:2s;
 }
 
+/* phrase 2 */
 .ligne2{
-    font-size:3rem;
+    font-size:1.7rem;
     animation-delay:5s;
 }
 
+/* BRUMES ARGENTÉES */
 .ligne3{
-    font-size:4.5rem;
+    margin-top:8px;
 
-    color:#f7f8ff;
+    font-size:2.7rem;
+
+    color:white;
+
+    letter-spacing:2px;
 
     text-shadow:
         0 0 10px rgba(255,255,255,1),
-        0 0 30px rgba(220,220,255,.9),
-        0 0 60px rgba(180,200,255,.8),
-        0 0 100px rgba(180,200,255,.5);
+        0 0 25px rgba(255,255,255,.9),
+        0 0 45px rgba(200,220,255,.8),
+        0 0 80px rgba(180,200,255,.6);
 
     animation-delay:8s;
 }
 
+/* question */
 .ligne4{
-    margin-top:20px;
-    font-size:3rem;
+    margin-top:25px;
+
+    font-size:1.5rem;
+
     animation-delay:11s;
 }
 
 .ligne5{
-    font-size:3rem;
+    font-size:1.5rem;
+
     animation-delay:14s;
 }
 
-@keyframes apparitionLigne {
+@keyframes apparitionLigne{
 
     from{
         opacity:0;
         transform:
-            translateY(15px);
+            translateY(20px)
+            scale(.9);
     }
 
     to{
         opacity:1;
         transform:
-            translateY(0);
+            translateY(0)
+            scale(1);
     }
 }
 
 @keyframes haloMagique{
 
     0%,100%{
-        text-shadow:
-            0 0 10px rgba(255,255,255,.8),
-            0 0 20px rgba(220,220,255,.6),
-            0 0 40px rgba(180,200,255,.4);
+        filter:brightness(1);
     }
 
     50%{
-        text-shadow:
-            0 0 15px rgba(255,255,255,1),
-            0 0 30px rgba(220,220,255,.8),
-            0 0 60px rgba(180,200,255,.6);
+        filter:brightness(1.25);
     }
 }
 
 .choix-personnage{
-     animation:
-        apparitionBoutons 2s ease forwards;
+
     opacity:0;
-    animation-delay:15s;
+
     position:fixed;
-    bottom:20vh;
+
+    bottom:18vh;
     left:50%;
+
     transform:translateX(-50%);
+
     display:flex;
-    flex-direction: column;
-    gap:10px;
+    flex-direction:column;
+
+    gap:12px;
+
     z-index:1000;
+
+    animation:
+        apparitionBoutons 2s ease forwards;
+
+    animation-delay:17s;
 }
 
-@keyframes apparitionBoutons {
+@keyframes apparitionBoutons{
 
     from{
         opacity:0;
         transform:
-            translateX(-50%) translateY(20px);
+            translateX(-50%)
+            translateY(25px);
     }
 
     to{
         opacity:1;
         transform:
-            translateX(-50%) translateY(0);
+            translateX(-50%)
+            translateY(0);
     }
 }
 
 .choix-personnage button{
-    padding:12px 25px;
+
+    width:240px;
+
+    padding:14px 20px;
+
     border:none;
-    border-radius:25px;
-    background:rgba(20,20,40,.9);
+
+    border-radius:30px;
+
+    background:
+        rgba(15,20,50,.92);
+
     color:white;
-    font-size:1rem;
+
+    font-size:1.05rem;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.15);
+
     cursor:pointer;
 }
 
