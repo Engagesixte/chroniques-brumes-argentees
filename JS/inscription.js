@@ -1,5 +1,3 @@
-console.log("inscription.js chargé");
-
 const form = document.getElementById("formInscription");
 
 form.addEventListener("submit", async (e) => {
