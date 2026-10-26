@@ -3,7 +3,7 @@ document.getElementById("livreVivant");
 
 video.playbackRate = 1;
 
-let genreChoisi = "";
+window.genreChoisi = "";
 
 
 const btnGarcon =
@@ -20,7 +20,7 @@ document.getElementById("titreChoix");
 
 btnGarcon.addEventListener("click", () => {
 
-    genreChoisi = "garcon";
+    window.genreChoisi = "garcon";
 
     document.querySelector(
         ".intro-container"
@@ -39,7 +39,7 @@ btnGarcon.addEventListener("click", () => {
 
 btnFille.addEventListener("click", () => {
 
-    genreChoisi = "fille";
+    window.genreChoisi = "fille";
 
     document.querySelector(
         ".intro-container"
@@ -56,3 +56,4 @@ btnFille.addEventListener("click", () => {
 
 });
 
+alert("Envoi du formulaire");
