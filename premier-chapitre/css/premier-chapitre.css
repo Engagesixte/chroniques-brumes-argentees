@@ -80,3 +80,46 @@ p{
 .btn-page:hover{
     background:#6e646e;
 }
+
+.popup-video {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-contenu {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.popup-contenu video {
+    width: 100%;
+    max-width: 900px;
+
+    border-radius: 15px;
+}
+
+.fermer-popup {
+    position: absolute;
+    top: -40px;
+    right: 0;
+
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.enveloppe {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.enveloppe:hover {
+    transform: scale(1.02);
+}
