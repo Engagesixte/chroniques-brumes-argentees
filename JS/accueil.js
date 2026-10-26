@@ -56,4 +56,3 @@ btnFille.addEventListener("click", () => {
 
 });
 
-alert("Envoi du formulaire");

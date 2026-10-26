@@ -6,12 +6,6 @@ form.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
-  const form = document.getElementById("formInscription");
-
-form.addEventListener("submit", async (e) => {
-
-    e.preventDefault();
-
     const prenom =
         document.getElementById("prenom").value;
 
@@ -35,12 +29,8 @@ form.addEventListener("submit", async (e) => {
         return;
     }
 
-    alert(
-        "Bienvenue " + prenom
-    );
-
     console.log(data);
 
-});
+    alert("Bienvenue " + prenom);
 
 });
