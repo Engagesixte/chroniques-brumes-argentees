@@ -1,4 +1,3 @@
-
 const video =
 document.getElementById("livreVivant");
 
@@ -57,4 +56,3 @@ btnFille.addEventListener("click", () => {
 
 });
 
-console.log("accueil.js chargé");
