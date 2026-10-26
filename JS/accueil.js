@@ -1,4 +1,4 @@
-alert("accueil.js chargé");
+
 const video =
 document.getElementById("livreVivant");
 
