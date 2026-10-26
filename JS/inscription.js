@@ -1,11 +1,17 @@
-const form = document.getElementById("formInscription");
+console.log("inscription.js chargé");
 
-form.addEventListener("submit", async (e) => {
+const formulaire =
+    document.getElementById("formInscription");
+
+formulaire.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
     const prenom =
         document.getElementById("prenom").value;
+
+    console.log("Prénom :", prenom);
+    console.log("Genre :", window.genreChoisi);
 
     const { data, error } =
         await supabaseClient
