@@ -1,5 +1,3 @@
-console.log("inscription.js chargé");
-
 const formulaire =
     document.getElementById("formInscription");
 
