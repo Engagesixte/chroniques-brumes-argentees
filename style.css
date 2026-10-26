@@ -53,17 +53,17 @@ body{
 }
 
 .ligne1{
-    font-size:1.8rem;
-    animation-delay:1s;
+    font-size:3rem;
+    animation-delay:2s;
 }
 
 .ligne2{
-    font-size:1.8rem;
-    animation-delay:3s;
+    font-size:3rem;
+    animation-delay:5s;
 }
 
 .ligne3{
-    font-size:2.8rem;
+    font-size:4.5rem;
 
     color:#f7f8ff;
 
@@ -73,18 +73,18 @@ body{
         0 0 60px rgba(180,200,255,.8),
         0 0 100px rgba(180,200,255,.5);
 
-    animation-delay:5s;
+    animation-delay:8s;
 }
 
 .ligne4{
     margin-top:20px;
-    font-size:1.8rem;
-    animation-delay:7s;
+    font-size:3rem;
+    animation-delay:11s;
 }
 
 .ligne5{
-    font-size:1.8rem;
-    animation-delay:9s;
+    font-size:3rem;
+    animation-delay:14s;
 }
 
 @keyframes apparitionLigne {
@@ -123,7 +123,7 @@ body{
      animation:
         apparitionBoutons 2s ease forwards;
     opacity:0;
-    animation-delay:11s;
+    animation-delay:15s;
     position:fixed;
     bottom:20vh;
     left:50%;
