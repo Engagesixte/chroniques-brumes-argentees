@@ -77,43 +77,10 @@
 
 </form>
    
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="JS/supabase.js"></script>
+<script src="JS/accueil.js"></script>
+<script src="JS/inscription.js"></script>
 
-    <script>
-    const video = document.getElementById("livreVivant");
-
-    video.playbackRate = 1.00;
-</script>
-
-<script>
-
-let genreChoisi = "";
-
-const btnGarcon = document.getElementById("btnGarcon");
-const btnFille = document.getElementById("btnFille");
-
-const form = document.getElementById("formInscription");
-const titre = document.getElementById("titreChoix");
-
-btnGarcon.addEventListener("click", () => {
-
-    genreChoisi = "garcon";
-
-    titre.textContent =
-        "Bienvenue, Porteur des Brumes";
-
-    form.style.display = "block";
-});
-
-btnFille.addEventListener("click", () => {
-
-    genreChoisi = "fille";
-
-    titre.textContent =
-        "Bienvenue, Porteuse des Brumes";
-
-    form.style.display = "block";
-});
-
-</script>
 </body>
 </html>
