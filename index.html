@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="accueil">
+    
        <video
     id="livreVivant"
-    class="couverture-video"
+    class="video-fond"
     autoplay
     muted
     loop
@@ -22,15 +22,98 @@
         type="video/mp4">
 
 </video>
-        <a class="btn-commencer"
-           href="premier-chapitre/premier-chapitre-page1.html">
-           Commencer l'aventure
-        </a>
-    </main>
+
+<div class="intro-container">
+
+    <div class="ligne ligne1">
+        Une mystérieuse aventure
+    </div>
+
+    <div class="ligne ligne2">
+        t'attend derrière les
+    </div>
+
+    <div class="ligne ligne3">
+        Brumes Argentées
+    </div>
+
+    <div class="ligne ligne4">
+        Choisis le héros
+    </div>
+
+    <div class="ligne ligne5">
+        que tu souhaites incarner...
+    </div>
+
+</div>
+
+
+        <div class="choix-personnage">
+
+    <button id="btnGarcon">
+        Porteur des Brumes
+    </button>
+
+    <button id="btnFille">
+        Porteuse des Brumes
+    </button>
+
+</div>
+
+<form id="formInscription" style="display:none;">
+
+    <h2 id="titreChoix"></h2>
+
+    <input
+        type="text"
+        id="prenom"
+        placeholder="Ton prénom"
+        required
+    >
+
+    <button type="submit">
+        Commencer l'aventure
+    </button>
+
+</form>
+   
+
     <script>
     const video = document.getElementById("livreVivant");
 
     video.playbackRate = 1.00;
+</script>
+
+<script>
+
+let genreChoisi = "";
+
+const btnGarcon = document.getElementById("btnGarcon");
+const btnFille = document.getElementById("btnFille");
+
+const form = document.getElementById("formInscription");
+const titre = document.getElementById("titreChoix");
+
+btnGarcon.addEventListener("click", () => {
+
+    genreChoisi = "garcon";
+
+    titre.textContent =
+        "Bienvenue, Porteur des Brumes";
+
+    form.style.display = "block";
+});
+
+btnFille.addEventListener("click", () => {
+
+    genreChoisi = "fille";
+
+    titre.textContent =
+        "Bienvenue, Porteuse des Brumes";
+
+    form.style.display = "block";
+});
+
 </script>
 </body>
 </html>
