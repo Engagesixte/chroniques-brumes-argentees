@@ -3,56 +3,39 @@ document.getElementById("livreVivant");
 
 video.playbackRate = 1;
 
-window.genreChoisi = "";
-
-
-const btnGarcon =
-document.getElementById("btnGarcon");
-
-const btnFille =
-document.getElementById("btnFille");
-
-const form =
+const formulaire =
 document.getElementById("formInscription");
 
 const titre =
 document.getElementById("titreChoix");
 
-btnGarcon.addEventListener("click", () => {
+const cartes =
+document.querySelectorAll(".carte-heros");
 
-    window.genreChoisi = "garcon";
+cartes.forEach(carte => {
 
-    document.querySelector(
-        ".intro-container"
-    ).style.display = "none";
+    carte.addEventListener("click", () => {
 
-    document.querySelector(
-        ".choix-personnage"
-    ).style.display = "none";
+        const genre =
+        carte.dataset.genre;
 
-    titre.textContent =
-        "Bienvenue, Porteur des Brumes";
+        window.genreChoisi = genre;
 
-    form.style.display = "block";
+        document.querySelector(
+            ".intro-container"
+        ).style.display = "none";
 
-});
+        document.querySelector(
+            ".choix-heros"
+        ).style.display = "none";
 
-btnFille.addEventListener("click", () => {
+        formulaire.style.display = "block";
 
-    window.genreChoisi = "fille";
+        titre.textContent =
+            genre === "garcon"
+            ? "Bienvenue, Porteur des Brumes"
+            : "Bienvenue, Porteuse des Brumes";
 
-    document.querySelector(
-        ".intro-container"
-    ).style.display = "none";
-
-    document.querySelector(
-        ".choix-personnage"
-    ).style.display = "none";
-
-    titre.textContent =
-        "Bienvenue, Porteuse des Brumes";
-
-    form.style.display = "block";
+    });
 
 });
-

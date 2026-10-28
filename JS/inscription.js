@@ -12,14 +12,16 @@ formulaire.addEventListener("submit", async (e) => {
     console.log("Genre :", window.genreChoisi);
 
     const { data, error } =
-        await supabaseClient
-            .from("lecteurs")
-            .insert([
-                {
-                    prenom: prenom,
-                    genre: window.genreChoisi
-                }
-            ])
+await supabaseClient
+.from("lecteurs")
+.insert([
+{
+    prenom: prenom,
+    genre: window.genreChoisi
+}
+])
+.select()
+.single();
    
 
     if(error){
