@@ -1,7 +1,7 @@
-const formulaire =
+const formulaireInscription =
     document.getElementById("formInscription");
 
-formulaire.addEventListener("submit", async (e) => {
+formulaireInscription.addEventListener("submit", async (e) => {
 
     e.preventDefault();
 
