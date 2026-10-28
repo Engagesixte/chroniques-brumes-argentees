@@ -24,13 +24,25 @@ formulaire.addEventListener("submit", async (e) => {
 
     if(error){
 
-        console.error(error);
+    console.error(error);
 
-        alert("Erreur Supabase");
+    alert("Erreur Supabase");
 
-        return;
-    }
+    return;
+}
 
-    alert("Bienvenue " + prenom);
+localStorage.setItem(
+    "prenom",
+    prenom
+);
+
+localStorage.setItem(
+    "genre",
+    window.genreChoisi
+);
+
+window.location.href =
+    "premier-chapitre/premier-chapitre-page1.html";
+
 
 });
