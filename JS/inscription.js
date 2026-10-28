@@ -20,8 +20,7 @@ await supabaseClient
     genre: window.genreChoisi
 }
 ])
-.select()
-.single();
+
    
 
     if(error){
